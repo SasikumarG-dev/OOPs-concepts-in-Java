@@ -1,0 +1,24 @@
+Objects:
+  - Real world entity that has state(data) and behavior(functionality).
+  - It is an instance of class.
+  - Example: Chair, table, pen, etc...
+  - Pen-> Object ; Color- White -> Data ; Used to write -> Behavior
+  
+Example program for Objects:
+
+class Student{  
+ int id; 
+ String name;  
+ public static void main(String args[]){  
+  //Creating an object or instance  
+  Student s1=new Student(); //creating an object of Student
+   s1.id=101; //Student id
+  s1.name="Sasi"; //Student name
+  System.out.println(s1.id); 
+  System.out.println(s1.name);  
+ }  
+}  
+
+OUTPUT:
+101
+Sasi
