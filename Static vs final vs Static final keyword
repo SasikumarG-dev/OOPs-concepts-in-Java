@@ -1,0 +1,15 @@
+Static vs final vs Static final keyword in java.
+
+Static keyword :
+ 0. Variables can be re-initialized after declaration.
+ 1. It is not compulsory to initialize the static variable at the time of its declaration.
+  
+  
+final keyword :
+ 0. Variables cannot be re-initialized after declaration.
+ 1. It is compulsory to initialize the final variable at the time of its declaration.
+
+
+Static final keyword :
+ 0. It is the combination of both Static and final keywords.
+ 1. Variable that is global to class and is impossible to change.
