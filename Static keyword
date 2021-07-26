@@ -1,0 +1,38 @@
+STATIC keyword:
+
+ - Used in variables, methods and in classes.
+ - Static keyword is memory efficient because it gets memory only once.
+ - A static method cannot use non-staic data member.
+ - this and super keyword cannot be used in static.
+ 
+Example:
+class StaticExample{  
+static int count=0;//will get memory only once and retain its value  
+  
+StaticExample(){  
+count++;//incrementing the value of static variable  
+System.out.println(count);  
+}  
+  
+public static void main(String args[]){  
+//creating objects  
+StaticExample c1=new StaticExample();  
+StaticExample c2=new StaticExample();  
+StaticExample c3=new StaticExample();  
+}  
+}  
+OUTPUT:
+1
+2
+3
+--------------------
+Here count variable is declared as static and it will get memory only once and stores the value.
+
+
+
+Q) Why main method in java is static?
+ 
+     * If it were non-static then JVM first creates an object and then calls the method.
+     * This will result in extra memory allocation.
+     * To make main method memory efficient static keyword is used.
+ 
