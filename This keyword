@@ -1,0 +1,12 @@
+THIS keyword:
+
+ - It is a reference variable that refers current object.
+ - this() constructor call is used to reuse constructor from constructor.
+ - Used for constructor chaining.
+ 
+i)   Used to refer current class instance variable.
+ii)  Used to invoke current class method.
+iii) Used to invoke current class constructor.
+
+ 
+ 
