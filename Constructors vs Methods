@@ -1,0 +1,13 @@
+  
+                Constructors                                                               Methods
+  
+  1. Initialize state of object                                              1. Expose behavior of the object
+  
+  2. Invoked implicitly(by system)                                           2. Invoked explicitly(by user)
+  
+  3. Constructor name should be same as class name                           3. Method name can be different depending upon the user
+  
+  4. No return type                                                          4. Method must have return type
+  
+  5. Compiler provides default constructor                                   5. Compiler does not provide default method
+  
