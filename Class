@@ -1,2 +1,14 @@
-Class is a collection of objects of different state and behavior.
-It's a template to create objects
+CLASS:
+- Class is a collection of objects of different states and behaviors.
+- It's a template or blueprint to create objects.
+- A class in java contains fields, methods, blocks, constructors.
+ - We can have multiple classes in Java.
+
+Example:
+class <class_name>{  
+    field;  
+    method;
+    constructor(){
+    
+    }
+}  
