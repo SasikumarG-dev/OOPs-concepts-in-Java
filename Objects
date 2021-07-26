@@ -1,5 +1,5 @@
 Objects:
-  - Real world entity that has state(data) and behavior(functionality).
+  - An entity that has state(data) and behavior(functionality).
   - It is an instance of class.
   - Example: Chair, table, pen, etc...
   - Pen-> Object ; Color- White -> Data ; Used to write -> Behavior
