@@ -1,0 +1,60 @@
+METHOD:
+ - A group of codes or block of codes that performs specific operations.
+ - It is a function used to expose behavior of object.
+ - Default method in java is main method.
+ 
+ Advantages:
+  > Code reusability
+  > Code optimization
+  
+ Example:
+ 
+ //method declaration
+ public static void EvenOdd(int num)  
+{  
+//method body  
+if(num%2==0)   
+System.out.println(num+" is even");   
+else   
+System.out.println(num+" is odd");  
+}  
+
+
+* In the above example Public is Access modifier, void is the return type, EvenOdd is the method name, int num is the parameter list.
+
+Access modifiers:
+ 1. PUBLIC - Methods are accessible in all class in the java package
+ 2. PROTECTED - Methods are accessible within the same package or subclasses in different packages.
+ 3. PRIVATE - Method is accessible only in class where it is declared.
+ 4. Default - When no access modifier is specified in the class, it is said to have default access modifiers. Default access modifier are accessible only within the same package.
+ 
+ 
+              
+  Access modifiers                                            Public          Protected          Private          Default
+ 
+  Accessible inside class                                       YES             YES                YES              YES
+  
+  Accessible inside subclass inside same package                YES             YES                NO               YES
+  
+  Accessible outside package                                    YES             NO                 NO               NO
+  
+  Accessible within subclass outside the package                YES             YES                NO               NO
+  
+  
+  Return type:
+   - It is the data type that the method returns.
+   - Example - int, String, long, float, etc..
+   - If the method does not return anything use void keyword.
+   
+  Method name:
+   - A unique name that defines the name of the method.
+   - It is better to use CamelCase to define a method for better understanding and readability.
+   - Example - AddTwoNumbers()
+   
+   Parameter list:
+   - It is the list of parameters separated by a comma and enclosed in the pair of parentheses().
+   - It conatins datatypes(int) and variable name (num).
+  
+   Method body:
+   - The code that are written inside the method.
+   - Enclosed with curly braces{}.
