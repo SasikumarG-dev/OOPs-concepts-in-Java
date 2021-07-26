@@ -1,0 +1,28 @@
+CONSTRUCTORS:
+
+ - Like methods, Constructors contains block of statements or codes.
+ - Constructor name should be the same as the class name.
+ 
+Example:
+
+class Student{  
+    int id;  
+    String name;  
+    //creating a constructor  
+    Student(int i,String n){  
+    id = i;  
+    name = n;  
+    }  
+    //method to display the values  
+    void display(){System.out.println(id+" "+name);}  
+   
+    public static void main(String args[]){  
+    //creating objects and passing values  
+    Student4 s1 = new Student4(111,"Karan");  
+    s1.display();  
+   }  
+}  
+
+ Constructor overloading:
+  - It is like having two or more constructors inside the class.
+  - The constructors name should be same as the class name irrespective of the number of constructors.
