@@ -1,0 +1,25 @@
+FINAL:
+
+ - It is used to restrict the user.
+ - It can be used in variables, methods and class.
+ - If any variable is declared as final then the values in it cannot be changed.
+ - If any method is declared as final then method overriding is not possible.
+ -  If a class is final then it cannot be extended i.e. to child class
+ 
+* A Constructor cannot be declared as final because it is never inherited.
+
+Example:
+class Bike{  
+ final int speedlimit=90; //final variable  
+ void run(){  
+  speedlimit=400;  
+ }  
+ public static void main(String args[]){  
+ Bike9 obj=new  Bike9();  
+ obj.run();  
+ }  
+}
+
+Here output is compile time error.
+
+Final variable once declared or initialized can never be changed.
