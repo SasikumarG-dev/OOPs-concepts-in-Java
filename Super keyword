@@ -1,0 +1,10 @@
+SUPER:
+ 
+ - Reference variable that is used to refer immediate parent class object.
+ - If super keyword is not initialized by the user then it is provided by the compiler implicitly.
+ 
+ i)   Refer immediate parent class instance variable.
+ ii)  Invoke immediate parent class method.
+ iii) Invoke immediate parent class constructor.
+ 
+ 
