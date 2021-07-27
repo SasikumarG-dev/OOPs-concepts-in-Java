@@ -1,0 +1,28 @@
+AGGREGATION:
+
+ - A class contain the reference of the another class.
+ - Aggregation represents HAS-A relationship.
+ - It is used for code reusability.
+ 
+Example:
+
+public class Address {  
+String city;
+String state;
+String country;  
+public Address(String city, String state, String country) {  
+    this.city = city;  
+    this.state = state;  
+    this.country = country;  
+}  
+  
+} 
+public class Emp {  
+int id;  
+String name;  
+Address address;
+// code written...
+....
+....
+
+}
