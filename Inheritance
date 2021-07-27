@@ -1,0 +1,55 @@
+INHERITANCE:
+
+ - One object that acquires all the properties and behavior of the parent object.
+ - It is also known as IS-A relationship or Parent-Child relationship.
+ - 'extends' keyword is used to increase functionality.
+ - Create new class upon existing class.
+ 
+Example:
+
+class Bike{  
+void ride(){System.out.println("riding...");}  
+}  
+class pulsar extends Bike{  
+void race(){System.out.println("racing...");}  
+}  
+class Inheritance{  
+public static void main(String args[]){  
+Bike d=new Bike();  
+d.race();  
+d.ride();  
+}
+}  
+
+OUTPUT:
+racing...
+riding...
+
+Types of Inheritance:
+
+i) Single Inheritance
+     When a class inherits another class it is called single inheritance.
+  
+ii) Multilevel Inheritance
+    It is chain of inheritance.
+    Example:
+     class Animal
+     class Dog extends Animal
+     class BabyDog extends Animal
+     
+iii) Hierarchical Inheritance
+    When two or more class inherits the same class it is called Hierarchical inheritance.
+    Example:
+    class Animal
+    class Dog extends Animal
+    class Cat extends Animal
+    
+    
+Q) Why Multiple inheritance is not used in Java?
+     - To reduce time complexity and to simplify the language.
+     - Java renders compile-time error when two classes inherits
+     Example:
+     class Animal
+    class Dog extends Animal
+    class Cat extends Dog,Animal
+    - It is not possible to inherit two classes.
