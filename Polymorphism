@@ -3,3 +3,47 @@ POLYMORPHISM:
  - It is concept to perform single action in different ways.
  - It is derived from two Geek words 'Poly' and 'Morphs'.
  - Poly means many and Morphs means forms.
+
+Types of Polymorphism:
+
+i) Method overloading or Compile time polymorphism
+
+  - Method overloading is having multiple methods of same name but having different parameters.
+  - Method overloading is done by 
+      *Changing number of arguments
+      Example:
+      // multiple methods of same name
+      Adder.add(11,12);    --> 2 arguments
+      Adder.add(11,22,33); --> 3 arguments
+      
+      *Changing type of arguments
+      Example:
+      form.add(11,12);     -->(int ,int)
+      form.add(11,"sasi"); -->(int ,Stirng)
+      
+ii) Method overriding or Runtime polymorphism
+
+  -  If a subclass have same method declared in the parent class then it is called Method overriding.
+  -  In method overriding it depends on which object you called to invoke the method in the class.
+  Example:
+  //crearting parent class
+  class Vehicle{  
+  //defining a method  
+  void run(){System.out.println("Vehicle is running");}  
+}  
+//Creating a child class  
+class Bike2 extends Vehicle{  
+  //defining the same method as in the parent class  
+  void run(){System.out.println("Bike is running safely");}  
+  
+  public static void main(String args[]){  
+  Bike2 obj = new Bike2();//creating object for child class 
+  Vehicle veh= new Vehicle()// creating object for parent class
+  veh.run();//calling parent method
+  obj.run();//calling child method  
+  }  
+}  
+
+OUTPUT:
+Vehicle is running
+Bike is running safely
