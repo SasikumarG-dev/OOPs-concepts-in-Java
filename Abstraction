@@ -1,0 +1,30 @@
+Abstraction:
+
+ - Abstraction is the process of hiding the implementation details and showing only the essential details.
+ - It hides the internal process and shows only the functionality to the user.
+ 
+Abstract class:
+  - 'abstract' keyword is used to declare abstract class.
+  - Abstract class can have abstract methods and non-abstract methods.
+  - Abstract class can be extended by using 'extend' keyword.
+  
+ Example:
+ //Abstract class example
+abstract class Shape{  
+//declaring abstract method
+abstract void draw();  
+}  
+class Rectangle extends Shape{  
+void draw(){System.out.println("drawing rectangle");}  
+}  
+class Circle1 extends Shape{  
+void draw(){System.out.println("drawing circle");}  
+}  
+class TestAbstraction1{  
+public static void main(String args[]){  
+Shape s=new Circle1();
+s.draw();  
+}  
+} 
+OUTPUT:
+drawing circle
