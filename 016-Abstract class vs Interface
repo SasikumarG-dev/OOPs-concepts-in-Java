@@ -7,7 +7,7 @@
     |      i)   Abstract keyword is used to declare abstract class.                      |        i)   Interface keyword is used to declare Interface.                        |
     |      ii)  Does not support Multiple Inheritance.                                   |        ii)  Does not support Multiple Inheritance.                                 |   
     |      iii) Abstract class can be extended by using 'extend' keyword.                |        iii) Interface can be extended by using 'implements' keyword.               |
-    |      iv)  Abstract class can have abstract and non-abstract mehtods.               |        iv)  Interface can have only abstract methods.                              |
+    |      iv)  Abstract class can have abstract and non-abstract mehtods.               |        iv)  Interface should have only abstract methods.                           |
     |                                                                                    |                                                                                    |
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------              
                   
