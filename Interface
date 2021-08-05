@@ -1,0 +1,22 @@
+INTERFACE:
+ 
+ - An interface is declared by using 'interface' keyword.
+ - Interface is implemented by using 'implements' keyword.
+ - It is used to achieve Abstraction and Multiple Inheritance.
+ - Interface should have only Abstract methods.
+ 
+Example:
+//Interface example
+interface printable{  
+void print();  
+}  
+class A6 implements printable{  
+public void print(){System.out.println("Hello");}  
+  
+public static void main(String args[]){  
+A6 obj = new A6();  
+obj.print();  
+ }  
+}  
+OUTPUT:
+Hello
