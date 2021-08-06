@@ -1,0 +1,61 @@
+ENCAPSULATION:
+
+ - Encapsulation is wrapping up the data(variable) and code(method) together in the single unit or class.
+ - It is the protective shield that protects the data from being accessed by the code outside the shield.
+ - It is the combination of data hiding and abstraction.
+ 
+To achieve Encapsulation in Java:
+  - Decalare variables as private.
+  - Provide getter and setter method.
+  
+Advantages:
+  By providing getter and setter method we can make the class read-only or write-only.
+  
+  
+Example:
+   public class EncapTest {
+   private String name;
+   private String idNum;
+   private int age;
+
+   public int getAge() {
+      return age;
+   }
+
+   public String getName() {
+      return name;
+   }
+
+   public String getIdNum() {
+      return idNum;
+   }
+
+   public void setAge( int newAge) {
+      age = newAge;
+   }
+
+   public void setName(String newName) {
+      name = newName;
+   }
+
+   public void setIdNum( String newId) {
+      idNum = newId;
+   }
+}
+
+
+public class RunEncap {
+
+   public static void main(String args[]) {
+      EncapTest encap = new EncapTest();
+      encap.setName("Sasi");
+      encap.setAge(21);
+      encap.setIdNum("2122");
+
+      System.out.print("Name : " + encap.getName() + " Age : " + encap.getAge());
+   }
+}
+
+OUTPUT:
+Name : "Sasi" Age : "21"
+
