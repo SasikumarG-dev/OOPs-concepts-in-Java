@@ -1,0 +1,25 @@
+Access modifiers:
+
+ 1. PUBLIC    - Methods are accessible in all class in the java package
+ 
+ 2. PROTECTED - Methods are accessible within the same package or subclasses in different packages.
+ 
+ 3. PRIVATE   - Method is accessible only in class where it is declared.
+ 
+ 4. Default   - When no access modifier is specified in the class, it is said to have default access modifiers. 
+                Default access modifier are accessible only within the same package.
+ 
+ 
+ 
+ 
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------             
+  Access modifiers                                            Public          Protected          Private          Default
+ 
+  Accessible inside class                                       YES             YES                YES              YES
+  
+  Accessible inside subclass inside same package                YES             YES                NO               YES
+  
+  Accessible outside package                                    YES             NO                 NO               NO
+  
+  Accessible within subclass outside the package                YES             YES                NO               NO
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------             
