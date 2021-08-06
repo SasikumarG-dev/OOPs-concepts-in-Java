@@ -1,0 +1,40 @@
+// Java program to print the Finonacci series using Recursion.
+
+package fibonacciseriesusingrecursion;
+import java.util.*;
+public class FibonacciSeriesUsingRecursion {
+    static int n1=0,n2=1,n3;
+    static void Fibonacci(int n){
+        if(n>0){
+            n3=n1+n2;
+            n1=n2;
+            n2=n3;
+            System.out.println(n3+" ");
+            Fibonacci(n-1);
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number to print Fibonacci series...");
+        int n=sc.nextInt();
+        System.out.println("Fibonacci series.......");
+        System.out.println(n1+"\n"+n2);
+        Fibonacci(n-2);
+    }
+}
+
+
+OUTPUT:
+Enter the number to print Fibonacci series...
+10
+Fibonacci series.......
+0
+1
+1 
+2 
+3 
+5 
+8 
+13 
+21 
+34 
