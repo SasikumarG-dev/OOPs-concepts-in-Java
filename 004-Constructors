@@ -26,3 +26,119 @@ class Student{
  Constructor overloading:
   - It is like having two or more constructors inside the class.
   - The constructors name should be same as the class name irrespective of the number of constructors.
+
+
+CODING:
+
+package constructor;
+
+//copy Constructor
+class CopyConstructor{
+    int id;
+    String name;
+    CopyConstructor(int id,String name){
+        this.id=id;
+        this.name=name;
+    }
+    CopyConstructor(CopyConstructor c){
+        this.id=c.id;
+        this.name=c.name;
+    }
+    void display(){
+        System.out.println(id+" "+name);
+    }
+}
+
+//Constructor Overloading
+class ConstructorOverloading{
+    int id;
+    String name;
+    String address;
+    ConstructorOverloading(int id,String name){
+        this.id=id;
+        this.name=name;
+    }
+    ConstructorOverloading(int id,String name,String address){
+        this.id=id;
+        this.name=name;
+        this.address=address;
+    }
+    ConstructorOverloading(String name){
+        this.name=name;
+    }
+    void display(){
+        System.out.println(id+" "+name+" "+address);
+    }
+}
+
+// parameterized Constructor
+class ParamConstructor{
+    int id;
+    String name;
+    ParamConstructor(int id,String name){
+        this.id=id;
+        this.name=name;
+       
+    }
+    
+    void display(){
+        System.out.println(id+" "+name);
+    }
+    
+}
+
+//Default Constructor
+class DefaultConstructor{
+    int id;
+    String name;
+    void display(){
+        System.out.println(id+" "+name);
+    }
+}
+
+//no-args constructor
+class NoArgsConstructor{
+    NoArgsConstructor(){
+        System.out.println("Hi I am a no-args constructor");
+    }
+}
+public class Constructor {
+    //static block
+    static {
+        System.out.println("Static block");
+    }
+    public static void main(String[] args) {
+        NoArgsConstructor obj=new NoArgsConstructor();
+        
+        ParamConstructor obj1=new ParamConstructor(1,"Sasi");
+        obj1.display();
+        
+        DefaultConstructor obj2=new DefaultConstructor();
+        obj2.display();
+        
+        ConstructorOverloading obj3=new ConstructorOverloading(1,"sasi");
+        ConstructorOverloading obj4=new ConstructorOverloading(1,"sasi","Pondy");
+        ConstructorOverloading obj5=new ConstructorOverloading("sasi");
+        obj3.display();
+        obj4.display();
+        obj5.display();
+        
+        CopyConstructor obj6=new CopyConstructor(1,"JD");
+        CopyConstructor obj7=new CopyConstructor(obj6);
+        obj6.display();
+        obj7.display();
+    }
+    
+}
+
+OUTPUT:
+
+Static block
+Hi I am a no-args constructor
+1 Sasi
+0 null
+1 sasi null
+1 sasi Pondy
+0 sasi null
+1 JD
+1 JD
