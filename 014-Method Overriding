@@ -1,0 +1,57 @@
+METHOD OVERRIDING:
+
+     - Child class has the same method name as the parent class.
+     - Parameters and return type should be same as the parent class methods.
+     - Achieve Runtime Polymorphism.
+     
+     
+CODING 1:
+
+package methodoverridingeg;
+class A{
+    void run(){
+        System.out.println("Class A is running");
+    }
+}
+class B extends A{
+    void run(){
+        System.out.println("Class B is running");
+    }
+}
+public class MethodOverridingEg {
+    public static void main(String[] args) {
+        A obj=new B();
+        obj.run();
+    }
+    
+}
+
+
+OUTPUT:
+Class B is running
+
+
+CODING 2:
+
+package methodoverridingeg;
+class A{
+    void run(){
+        System.out.println("Class A is running");
+    }
+}
+class B extends A{
+    void run(){
+        System.out.println("Class B is running");
+    }
+}
+public class MethodOverridingEg {
+    public static void main(String[] args) {
+        A obj=new A();
+        obj.run();
+    }
+    
+}
+
+
+OUTPUT:
+Class A is running
