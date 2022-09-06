@@ -22,3 +22,100 @@ class Student{
 OUTPUT:
 101
 Sasi
+
+------------------------------------------------------------------------------------------------
+
+CODING:
+
+package obj;
+class ObjNew{
+    int a;
+    int b;
+    
+    void insert(int num1,int num2){
+        a=num1;
+        b=num2;
+    } 
+    void display(){
+        System.out.println(a+" "+b);
+    }
+}
+class ObjNew1{
+    void square(int a){
+        System.out.println("Square of the number: "+a*a);
+    }
+}
+class Bank{
+    int accNo;
+    String accName;
+    double amount;
+    void insertDetails(int no,String name,double amt){
+        accNo=no;
+        accName=name;
+        amount=amt;
+    }
+    void deposit(double amt){
+        amount+=amt;
+        System.out.println("Amount Deposited "+amt+
+                "\nTotal amount "+amount);
+    }
+    void withdraw(double amt){
+        amount-=amt;
+        System.out.println("Amount Withdrawn "+amt+
+                "\nTotal amount "+amount);
+    }
+    void checkBalance(){
+        System.out.println("Balance amount"+amount);
+    }
+    void accountDetails(){
+        System.out.println("Account Number - "+accNo+
+                "\nAccount Name - "+accName+
+                "\nAccount Balance - "+amount);
+    }
+}
+public class Obj {
+
+    //instance variable
+    int a=10;
+    public static void main(String[] args) {
+        Obj object=new Obj();
+        System.out.println(object.a);
+        //assign values to object(through reference)
+        ObjNew obj=new ObjNew();
+        obj.a=1;
+        obj.b=2;
+        System.out.println(obj.a+" "+obj.b);
+        //initialization through methods
+        obj.insert(10, 20);
+        obj.display();
+        //anonymous object
+        new ObjNew1().square(5);
+        //simple Bank app
+        Bank bankObj=new Bank();
+        bankObj.insertDetails(123, "Sasi", 1000);
+        bankObj.accountDetails();
+        bankObj.deposit(1000);
+        bankObj.checkBalance();
+        bankObj.withdraw(500);
+        bankObj.checkBalance();
+        
+        
+    }
+    
+}
+
+OUTPUT:
+
+10
+1 2
+10 20
+Square of the number: 25
+Account Number - 123
+Account Name - Sasi
+Account Balance - 1000.0
+Amount Deposited 1000.0
+Total amount 2000.0
+Balance amount2000.0
+Amount Withdrawn 500.0
+Total amount 1500.0
+Balance amount1500.0
