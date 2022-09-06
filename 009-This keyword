@@ -9,4 +9,58 @@ ii)  Used to invoke current class method.
 iii) Used to invoke current class constructor.
 
  
+ CODING:
  
+ package thiskeyword;
+//invoke current class constructor
+class C{
+    C(){
+        this(4);
+        System.out.println("Hello");
+    }
+    C(int x){
+        System.out.println("Hello and "+x);
+    }
+}
+//invoke current class constructor
+class B{
+    B(){
+        System.out.println("Hello");
+    }
+    B(int x){
+        this();
+        System.out.println("Hello and "+x);
+    }
+}
+
+//invoke current class method
+class A{
+    void method1(){
+        System.out.println("Method 1");
+    }
+    void method2(){
+        this.method1();
+        System.out.println("Method 2");
+        
+    }
+}
+public class ThisKeyword {
+    public static void main(String[] args) {
+        A obj=new A();
+        obj.method2();
+        
+        B obj1=new B(2);
+        
+        C obj2=new C();
+    }
+    
+}
+
+OUTPUT:
+
+Method 1
+Method 2
+Hello
+Hello and 2
+Hello and 4
+Hello
