@@ -26,3 +26,42 @@ Address address;
 ....
 
 }
+
+
+CODING:
+
+package aggregations;
+//Employee class HAS-A relationship of Address class
+class Address{
+    int doorNo;
+    String place;
+    String country;
+    Address(int no,String place,String country){
+        this.doorNo=no;
+        this.place=place;
+        this.country=country;
+    }
+}
+class Details{
+    int id;
+    String name;
+    Address address;
+    Details(int id,String name,Address address){
+        this.id=id;
+        this.name=name;
+        this.address=address;
+    }
+    void display(){
+        System.out.println(id+" "+name+" "+address.doorNo+" "
+                +address.place+" "+address.country);
+    }
+}
+public class Aggregations {
+    public static void main(String[] args) {
+        Address obj=new Address(47,"Pondy","India");
+        Details obj1=new Details(1,"SasiKumar",obj);
+        obj1.display();
+    }
+    
+}
+
