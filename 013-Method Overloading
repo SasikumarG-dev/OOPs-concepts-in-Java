@@ -1,0 +1,36 @@
+Method Overloading:
+
+   - class with two or more methods having same method name but different parameters and return type.
+   - Increase readability of the code
+   - Achieve Compile Time polymorphism
+   
+CODING:
+
+package methodoverloadingeg;
+class Overloading{
+    int add(int a,int b){
+        return a+b;
+    }
+    int add(int a,int b,int c){
+        return a+b+c;
+    }
+    String add(String a,String b){
+        return a+" "+b;
+    }
+}
+public class MethodOverloadingEg {
+    public static void main(String[] args) {
+        Overloading obj=new Overloading();
+        System.out.println(obj.add(1, 2));
+        System.out.println(obj.add(1, 2, 3));
+        System.out.println(obj.add("Sasi", "Kumar"));
+    }
+    
+}
+
+
+OUTPUT:
+
+3
+6
+Sasi Kumar
