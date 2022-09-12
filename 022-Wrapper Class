@@ -1,0 +1,13 @@
+Wrapper Class:
+   
+      -Wrapper class is used to convert primitive data types into objects.
+      -Wrapper classes are:
+               
+               1. Boolean
+               2. Byte
+               3. Integer
+               4. Long
+               5. Character
+               6. Long
+               7. Float
+               8. Double
