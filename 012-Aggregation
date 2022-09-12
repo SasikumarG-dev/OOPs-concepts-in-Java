@@ -3,6 +3,7 @@ AGGREGATION:
  - A class contain the reference of the another class.
  - Aggregation represents HAS-A relationship.
  - It is used for code reusability.
+ - It is known as Composition.
  
 Example:
 
