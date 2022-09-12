@@ -1,1 +1,13 @@
-Method
+
+
+
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    |                         Method Overloading                                 |                          Method Overriding                                         |
+    |                                                                            |                                                                                    |
+    |                                                                            |                                                                                    |
+    |      i)   Two Methods having same method name but different parameters.    |        i)   Two methods having same method name and same parameters.               |
+    |      ii)  It is performed inside the class.                                |        ii)  It is performed in two classes i.e. by using Inheritance.              |   
+    |      iii) We can change the number of arguments and the return type.       |        iii) Number of arguments and parameters should be same.                     |
+    |      iv)  Achieve compile time polymorphism.                               |        iv)  Achieve run time polymorphism.                                         |
+    |                                                                            |                                                                                    |
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
